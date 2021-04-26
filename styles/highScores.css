@@ -1,0 +1,25 @@
+#HSList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
+.high-score {
+  font-size: 2.8rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+.high-score:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+}
+
+.HS-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: blue; */
+}
+.HS-container h1 {
+  text-align: center;
+}

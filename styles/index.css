@@ -1,0 +1,112 @@
+html {
+  font-size: 62.5%;
+  font-family: "Abril Fatface", monospace, sans-serif;
+}
+
+body {
+  background: linear-gradient(to left, #333333, #dd1818, #333333);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1 {
+  font-size: 5.4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+/* main content */
+.title {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.home h1 {
+  text-align: center;
+}
+.main-container {
+  /* background-color: lawngreen; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+/* any child of this container has this property*/
+.main-containter > * {
+  width: 100%;
+}
+
+.button-container {
+  margin-top: 2rem;
+  /* background-color: lawngreen; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-container h1 {
+  text-align: center;
+}
+
+/* buttons */
+.btn {
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  margin: 1rem;
+  border-radius: 200px;
+  border: 2px solid rgb(0, 109, 128);
+  color: rgb(0, 43, 51);
+  background-color: rgb(0, 202, 238);
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+.btn[disabled] {
+  color: rgb(115, 234, 255);
+}
+
+/* forms */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin: 4rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+input::placeholder {
+  color: rgb(157, 209, 255);
+}
